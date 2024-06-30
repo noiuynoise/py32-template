@@ -30,6 +30,9 @@ extern "C" {
 
 /* Includes ------------------------------------------------------------------*/
 #include "py32f0xx_hal_def.h"
+#if (defined(DMA) || defined(DMA1))
+  #include "py32f0xx_hal_dma.h"
+#endif
 
 /** @addtogroup PY32F0xx_HAL_Driver
   * @{
